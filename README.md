@@ -15,8 +15,6 @@ A Java Swing desktop application for managing a parking facility. The project in
 
 ## 🖥️ Project UI
 
-> The images below are clean UI previews based on the screens/components defined in the project. They are included to make the GitHub repository easier to understand at a glance.
-
 ### Welcome / Main Screen
 
 ![Welcome screen](screenshots/welcome.png)
@@ -81,11 +79,3 @@ parking/
 3. Configure the required database connection for your environment.
 4. Build the project.
 5. Run the main application screen.
-
-## 🔐 Security Note
-
-This repository is intended to contain source code only. Personal names, phone numbers, SMS credentials and generated build artifacts have been removed from this cleaned copy.
-
-## 📄 License
-
-Add your preferred license here before publishing the repository.
