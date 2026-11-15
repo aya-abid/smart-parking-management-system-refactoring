@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.WelcomeController"
+      styleClass="welcome" alignment="CENTER" spacing="20" prefWidth="780" prefHeight="600">
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    <Label text="WELCOME" styleClass="welcome-title"/>
+    <Label text="TO" styleClass="welcome-title"/>
+    <Label text="AUTOMATED PARKING SYSTEM" styleClass="welcome-title"/>
+    <ProgressBar fx:id="progressBar" prefWidth="600" progress="0"/>
+</VBox>

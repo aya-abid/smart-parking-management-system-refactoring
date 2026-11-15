@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.ChooseLoginController"
+      styleClass="screen" alignment="CENTER" spacing="30" prefWidth="700" prefHeight="600">
+    <Label text="CHOOSE LOGIN" styleClass="title"/>
+    <Button text="ADMIN LOGIN" onAction="#adminLogin" styleClass="big-button"/>
+    <Button text="EMPLOYEE LOGIN" onAction="#employeeLogin" styleClass="big-button"/>
+</VBox>
