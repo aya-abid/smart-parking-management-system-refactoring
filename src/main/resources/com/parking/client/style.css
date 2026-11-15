@@ -1,0 +1,50 @@
+.root {
+    -fx-font-size: 14px;
+}
+
+.screen {
+    -fx-background-color: #f4f6f8;
+}
+
+.welcome {
+    -fx-background-color: #2c3e50;
+}
+
+.welcome-title {
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.big-button {
+    -fx-min-width: 220px;
+    -fx-font-weight: bold;
+}
+
+.bay-button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.bay-section {
+    -fx-border-color: black;
+    -fx-padding: 10px;
+}
+
+.slot-free {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.slot-booked {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
