@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.EmployeeHomeController"
+      styleClass="screen" alignment="CENTER" spacing="30" prefWidth="1000" prefHeight="700">
+    <Label text="EMPLOYEE HOME" styleClass="title"/>
+    <Label fx:id="welcomeLabel"/>
+    <HBox alignment="CENTER" spacing="60">
+        <Button fx:id="bayAButton" text="Parking Bay A" onAction="#openBayA" contentDisplay="TOP" styleClass="bay-button"/>
+        <Button fx:id="bayBButton" text="Parking Bay B" onAction="#openBayB" contentDisplay="TOP" styleClass="bay-button"/>
+    </HBox>
+    <HBox alignment="CENTER" spacing="20">
+        <Button text="CHANGE PASSWORD" onAction="#changePassword"/>
+        <!-- no logout action yet -->
+        <Button text="LOGOUT"/>
+    </HBox>
+</VBox>
