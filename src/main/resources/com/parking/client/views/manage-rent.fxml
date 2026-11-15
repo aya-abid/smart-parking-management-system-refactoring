@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.ManageRentController"
+      styleClass="screen" alignment="TOP_CENTER" spacing="20" prefWidth="780" prefHeight="600">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <Label text="Parking rent" styleClass="title"/>
+    <GridPane hgap="15" vgap="15" alignment="CENTER">
+        <Label text="Vehicle type" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="vehicleTypeBox" prefWidth="200" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Rent per hour" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="rentField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Button text="Add rent" onAction="#addRent" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    </GridPane>
+    <TableView fx:id="rentTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="vehicleTypeColumn" text="Vehicle Type" prefWidth="340"/>
+            <TableColumn fx:id="rentColumn" text="Rent Per Hour" prefWidth="340"/>
+        </columns>
+    </TableView>
+    <Button text="Delete" onAction="#deleteRent"/>
+</VBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.AddEmployeeController"
+      styleClass="screen" alignment="TOP_CENTER" spacing="20" prefWidth="750" prefHeight="650">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <Label text="ADD EMPLOYEE" styleClass="title"/>
+    <HBox spacing="30" alignment="CENTER">
+        <GridPane hgap="15" vgap="12">
+            <Label text="EMPLOYEE ID" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="employeeIdField" prefWidth="250" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="NAME" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="nameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="FATHER NAME" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="fatherNameField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Label text="ADDRESS" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextArea fx:id="addressArea" prefRowCount="3" prefWidth="250" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <Label text="MOBILE NO" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="mobileField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        </GridPane>
+        <VBox spacing="10" alignment="CENTER">
+            <ImageView fx:id="photoView" fitWidth="160" fitHeight="180" preserveRatio="true"/>
+            <Button text="Browse Photo" onAction="#browsePhoto"/>
+        </VBox>
+    </HBox>
+    <Button text="ADD" onAction="#addEmployee" styleClass="big-button"/>
+</VBox>

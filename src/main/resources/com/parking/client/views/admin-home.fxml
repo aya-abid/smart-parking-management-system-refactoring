@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.AdminHomeController"
+      styleClass="screen" alignment="CENTER" spacing="20" prefWidth="800" prefHeight="600">
+    <Label text="Admin Home" styleClass="title"/>
+    <Label fx:id="welcomeLabel"/>
+    <Button text="MANAGE RENT" onAction="#manageRent" styleClass="big-button"/>
+    <Button text="ADD EMPLOYEE" onAction="#addEmployee" styleClass="big-button"/>
+    <Button text="VIEW EMPLOYEES" onAction="#viewEmployees" styleClass="big-button"/>
+    <Button text="DAILY SALE" onAction="#dailySale" styleClass="big-button"/>
+    <Button text="CHANGE PASSWORD" onAction="#changePassword" styleClass="big-button"/>
+</VBox>

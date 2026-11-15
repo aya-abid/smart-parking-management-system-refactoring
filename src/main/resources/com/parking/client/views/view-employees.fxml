@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.parking.client.controller.ViewEmployeesController"
+      styleClass="screen" alignment="TOP_CENTER" spacing="20" prefWidth="900" prefHeight="600">
+    <padding><Insets top="30" right="30" bottom="30" left="30"/></padding>
+    <Label text="VIEW EMPLOYEES" styleClass="title"/>
+    <TableView fx:id="employeeTable" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="empIdColumn" text="empid" prefWidth="80"/>
+            <TableColumn fx:id="nameColumn" text="name" prefWidth="140"/>
+            <TableColumn fx:id="fatherNameColumn" text="father name" prefWidth="140"/>
+            <TableColumn fx:id="mobileColumn" text="mobile no" prefWidth="120"/>
+            <TableColumn fx:id="addressColumn" text="address" prefWidth="180"/>
+            <TableColumn fx:id="photoColumn" text="photo" prefWidth="170"/>
+        </columns>
+    </TableView>
+    <Button text="DELETE" onAction="#deleteEmployee"/>
+</VBox>
